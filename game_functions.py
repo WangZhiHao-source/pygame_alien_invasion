@@ -32,6 +32,8 @@ def check_events(ai_settings,screen,ship,bullets):
 	for event in pygame.event.get():
 		# 检测是否为退出请求，是的话退出
 		if event.type == pygame.QUIT:
+			print()
+			print()
 			sys.exit()
 		# 检测到是向右移动时，向右移动
 		elif event.type == pygame.KEYDOWN:
