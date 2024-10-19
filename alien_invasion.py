@@ -21,7 +21,7 @@ def run_game():
 	bullets = Group()
 	#创建外星人编组
 	aliens = Group()
-	gf.create_feet(ai_settings,screen,aliens)
+	gf.create_fleet(ai_settings,screen,ship,aliens)
 	# 开始游戏的主循环
 	while True:
 		# 监控键盘和鼠标实践
