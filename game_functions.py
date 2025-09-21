@@ -55,3 +55,9 @@ def update_bullets(bullets):
 	for bullet in bullets.copy():
 		if bullet.rect.bottom <= 0:
 			bullets.remove(bullet)
+		# 让最近绘制的屏幕可见
+    	pygame.display.flip()
+    def update_bullets(bullets):
+    	for bullet in bullets.copy():
+    		if bullet.rect.bottom <= 0:
+    			bullets.remove(bullet)
